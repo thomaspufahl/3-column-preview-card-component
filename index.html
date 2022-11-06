@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | 3-column preview card component</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			min-height: 100vh;
+			height: 100%;
+			background-color: hsl(0, 0%, 95%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 15px;
+		}
+
+		main {
+			min-height: 450px;
+			max-width: 900px;
+			display: grid;
+			grid-template: 'a b c';
+			font-family: 'Outfit', sans-serif;
+		}
+
+		.Card {
+			display: grid;
+			grid-template: 'a, b, c';
+			padding: 3rem;
+		}
+
+		.Sedans {
+			border-radius: 10px 0px 0px 10px;
+			background-color: hsl(31, 77%, 52%);
+		}
+
+		.Suvs {
+			background-color: hsl(184, 100%, 22%);
+		}
+
+		.Luxury {
+			border-radius: 0px 10px 10px 0px;
+			background-color: hsl(179, 100%, 13%);
+		}
+
+		footer {
+			align-self: end;
+		}
+
+		.btn {
+			width: 8rem;
+			height: 2.6rem;
+			border-radius: 60px;
+			border-style: none;
+			font-size: 0.9rem;
+		}
+
+		.Content {
+			display: grid;
+			font-size: 1.25em;
+			line-height: 25px;
+			color: hsl(0, 0%, 95%);
+		}
+
+		p {
+			font-weight: 200;
+			color: hsla(0, 0%, 100%, 0.75);
+			font-size: 1rem;
+		}
+
+		h1 {
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+
+		#b1 {
+			color: hsl(31, 77%, 52%);
+		}
+
+		#b2 {
+			color: hsl(184, 100%, 22%);
+		}
+
+		#b3 {
+			color: hsl(179, 100%, 13%);
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<section class="Sedans Card">
+			<header><img src="./images/icon-sedans.svg" alt="sedans"></header>
+			<article class="Content">
+				<h1>Sedans</h1>
+				<p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+					or on your next road trip.</p>
+			</article>
+			<footer><button class="btn" id="b1"><b>Learn More</b></button></footer>
+		</section>
+		<section class="Suvs Card">
+			<header><img src="./images/icon-suvs.svg" alt="suvs"></header>
+			<article class="Content">
+				<h1>SUVs</h1>
+				<p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+					and off-road adventures.</p>
+			</article>
+			<footer><button class="btn" id="b2"><b>Learn More</b></button></footer>
+		</section>
+		<section class="Luxury Card">
+			<header><img src="./images/icon-luxury.svg" alt="luxury"></header>
+			<article class="Content">
+				<h1>Luxury</h1>
+				<p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+					rental and arrive in style.</p>
+			</article>
+			<footer><button class="btn" id="b3"><b>Learn More</b></button></footer>
+		</section>
+	</main>
+	<!-- #region CREDITS -->
+	<!-- <div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="#">Your Name Here</a>.
+	</div> -->
+	<!-- #endregion -->
+</body>
+
+</html>
